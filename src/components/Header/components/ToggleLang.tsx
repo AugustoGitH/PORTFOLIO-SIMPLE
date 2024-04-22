@@ -12,19 +12,24 @@ interface ToggleLangProps {
 export default function ToggleLang({ mobile = false }: ToggleLangProps) {
   const [showMenu, setShowMenu] = useState(false)
   const { handleSelectLang, lang } = useContext(TranslateContext)
+  const labelLangs: Record<Lang, string> = {
+    en: "English",
+    es: "Espanhol",
+    ptbr: "Português"
+  }
   const MenuLangs = ({ ...rest }: ComponentProps<"ul">) => {
     const langsToSelected = (["en", "es", "ptbr"] as Lang[]).filter(l => l !== lang)
-    const labelLangs: Record<Lang, string> = {
-      en: "English",
-      es: "Espanhol",
-      ptbr: "Português"
+
+    const handleSelect = (lang: Lang) => {
+      handleSelectLang(lang)
+      setShowMenu(false)
     }
     return (
       <S.MenuLangs {...rest}>
         <li className="selected">{labelLangs[lang]}</li>
         {
           langsToSelected.map(l => (
-            <li key={`select-lang-${l}`} onClick={() => handleSelectLang(l)}>{labelLangs[l]}</li>
+            <li key={`select-lang-${l}`} onClick={() => handleSelect(l)}>{labelLangs[l]}</li>
           ))
         }
 
@@ -40,7 +45,7 @@ export default function ToggleLang({ mobile = false }: ToggleLangProps) {
         <button className="btn-toggle-lang">
 
           <Icon className="icon-lang" icon="mdi:language" />
-          {mobile && <span>English</span>}
+          {mobile && <span>{labelLangs[lang]}</span>}
           <Icon className="icon-arrow" icon={`ri:arrow-${showMenu ? "up" : "down"}-s-line`} />
         </button>
         {

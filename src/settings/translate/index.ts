@@ -2,9 +2,14 @@ import { type TranslateKeys } from "./types";
 
 const keys: TranslateKeys = [
   {
-    ptbr: `<span class="word-inter">Desenvolvedor</span> Web Full-Stack`,
-    en: `Web <span className="word-inter">Developer</span> Full-Stack`,
-    es: `<span class="word-inter">Desarrollador</span> Web Full-Stack`,
+    ptbr: `Desenvolvedor Web`,
+    en: `Web Developer`,
+    es: `Desarrollador Web`,
+  },
+  {
+    ptbr: `Dev Web`,
+    en: `Web Dev`,
+    es: `Dev Web`,
   },
   {
     ptbr: "Construindo o Futuro Digital com Excelência e Inovação em Desenvolvimento Web Full-Stack",
@@ -15,6 +20,11 @@ const keys: TranslateKeys = [
     ptbr: "Começar",
     en: "Start",
     es: "Comenzar",
+  },
+  {
+    ptbr: "Aparência",
+    es: "Apariencia",
+    en: "Appearance",
   },
 
   {
@@ -193,6 +203,7 @@ const keys: TranslateKeys = [
     en: "My first experience with <strong>Augusto</strong> as a web developer was amazing. He is highly skilled, maintains excellent communication in remote work, and is proactive in driving projects with new ideas.",
     es: "Mi primera experiencia con <strong>Augusto</strong> como desarrollador web fue increíble. Es altamente hábil, mantiene una excelente comunicación en el trabajo remoto y es proactivo en impulsar proyectos con nuevas ideas.",
   },
+
   {
     ptbr: "É com prazer que recomendo <strong>Augusto Westphal</strong> como um desenvolvedor Full-Stack altamente competente. Durante nosso tempo juntos na DRT Sistemas, Augusto demonstrou habilidades notáveis em Node.js, React.js e Next.js, entregando projetos de alta qualidade.",
     en: "It is with pleasure that I recommend <strong>Augusto Westphal</strong> as a highly competent Full-Stack developer. During our time together at DRT Sistemas, Augusto demonstrated remarkable skills in Node.js, React.js, and Next.js, delivering high-quality projects.",
@@ -227,6 +238,16 @@ const keys: TranslateKeys = [
     ptbr: "Próxima página",
     en: "Next Page",
     es: "Siguiente página",
+  },
+  {
+    ptbr: "Me contate",
+    es: "Contáctame",
+    en: "Contact me",
+  },
+  {
+    ptbr: "Projetos",
+    es: "Proyectos",
+    en: "Projects",
   },
 ];
 

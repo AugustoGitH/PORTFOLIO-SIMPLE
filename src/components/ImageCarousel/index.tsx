@@ -1,12 +1,14 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
 import * as S from "./styles"
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import normalizeString from "@/helpers/normalizeString"
+
 interface ImageCarouselProps {
-  images: Array<{ src: string, alt: string, type: "image" | "video" }>
+  images: Array<{ id: string, src: string, alt: string, type: "image" | "video" }>
 }
 export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [imageIndex, setImageIndex] = useState(0)
+  // const { registerVideo } = useContext(ImageCarouselContext)
 
   const translate = (direction: "left" | "right") => {
     if (direction === "left") {
@@ -15,6 +17,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
       setImageIndex(prev => prev + 1)
     }
   }
+
   return (
     <S.ImageCarousel>
       {
@@ -27,34 +30,30 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
 
       <div className="carousel">
         {
-          images.map((img, index) => (
-            <>
+          images.map((img, _, imgs) => (
+            <Fragment key={img.id}>
+
               {
                 img.type === "image" ? (
                   <img
-                    key={`image-in-carousel-${index}-${normalizeString(img.alt, {
-                      toLowerCase: true,
-                      replaceSpaces: true
-                    })}`}
+
                     src={img.src}
                     alt={img.alt}
                     style={{ transform: `translateX(${-100 * (imageIndex)}%)` }}
                   />
                 ) : (
                   <video
-                    key={`video-in-carousel-${index}-${normalizeString(img.alt, {
-                      toLowerCase: true,
-                      replaceSpaces: true
-                    })}`}
-                    src={img.src}
+                    poster={imgs.find(i => i.type === "image")?.src}
                     style={{ transform: `translateX(${-100 * (imageIndex)}%)` }}
                     controls
-                    autoPlay
-                  />
+
+                  >
+                    <source src={img.src} type="video/mp4" />
+                  </video>
                 )
               }
 
-            </>
+            </Fragment>
 
           ))
         }

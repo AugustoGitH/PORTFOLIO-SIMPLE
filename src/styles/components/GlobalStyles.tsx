@@ -8,10 +8,14 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
   }
-  button{
+  button, a{
     all: unset;
     box-sizing: border-box;
     cursor: pointer;
+  }
+
+  code{
+    word-wrap: break-word;
   }
   a{
     font-size: inherit;

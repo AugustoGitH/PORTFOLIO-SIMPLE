@@ -41,10 +41,12 @@ export const ToggleTheme = styled.div`
       }
       .toggle{
         position: absolute;
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
+        border: 1px solid  ${({ theme }) => theme.colors.secondary.background.main};
         
         top: 0;
+  
         bottom: 0;
         margin: auto;
         background-color: ${({ theme }) => theme.colors.light.color.main};
@@ -54,7 +56,7 @@ export const ToggleTheme = styled.div`
         align-items: center;
         justify-content: center;
         .icon{
-          font-size: .9rem;
+          font-size: .8rem;
           color: ${({ theme }) => theme.colors.primary.background.main}
         }
       }
@@ -62,7 +64,7 @@ export const ToggleTheme = styled.div`
         transform: translateX(0px);
       }
       .toggle.light{
-        transform: translateX(100%)
+        transform: translateX(calc(100% - 1px))
       }
     }
 `

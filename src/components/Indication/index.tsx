@@ -4,6 +4,7 @@ import * as S from "./styles"
 
 import { ReactNode } from "react"
 import Translate from "../Translate"
+import normalizeString from "@/helpers/normalizeString"
 interface IndicationProps {
   name: string,
   profile: {
@@ -19,7 +20,11 @@ interface IndicationProps {
 }
 export default function Indication({ auth, description, linkedin, name, profile }: IndicationProps) {
   return (
-    <S.Indication>
+    <S.Indication id={`${normalizeString(name, {
+      toLowerCase: true,
+      replaceSpaces: true
+
+    })}`}>
       <a target="_blank" href={auth.href}><span className="auth"><Translate>{auth.label}</Translate></span></a>
       <img className="profile" alt={profile.alt} src={profile.src} width={100} height={100} />
       <div className="infos">

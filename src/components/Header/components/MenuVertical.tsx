@@ -3,15 +3,17 @@ import * as S from "../styles"
 import ToggleLang from "./ToggleLang"
 import ToggleTheme from "./ToggleTheme"
 import { useContext, useEffect } from "react"
-import { PageContext } from "@/contexts/PageContext"
+import { CurrentPageContext } from "@/contexts/CurrentPageContext"
 import scrollToElementById from "@/helpers/scrollToElementById"
+import { settingPages } from "@/settings/pages"
+import Translate from "@/components/Translate"
 
 interface MenuVerticalProps {
   show: boolean,
   onClose?: () => void
 }
 export default function MenuVertical({ show, onClose = () => { } }: MenuVerticalProps) {
-  const { pagesContent, setPage, page } = useContext(PageContext)
+  const { currentPage, setCurrentPage } = useContext(CurrentPageContext)
 
   useEffect(() => {
     document.body.style.overflow = show ? "hidden" : "auto"
@@ -21,10 +23,10 @@ export default function MenuVertical({ show, onClose = () => { } }: MenuVertical
   }, [show])
 
   const registerNavigation = (index: number, id: string) => ({
-    className: page === index ? "current" : "",
+    className: currentPage === index ? "current" : "",
     onClick: () => {
       onClose()
-      setPage(index)
+      setCurrentPage(index)
       setTimeout(() => {
         scrollToElementById(id, 100)
       }, 200)
@@ -36,7 +38,7 @@ export default function MenuVertical({ show, onClose = () => { } }: MenuVertical
 
         <ToggleLang mobile />
         <div className="appearance">
-          <span>Aparência</span>
+          <span><Translate>Aparência</Translate></span>
           <ToggleTheme />
         </div>
         <nav className="social">
@@ -50,10 +52,13 @@ export default function MenuVertical({ show, onClose = () => { } }: MenuVertical
         </nav>
         <ul className="menu-pages">
           {
-            pagesContent.map(([label, href], index) => (
-              <li key={`item-nav-${index}-menu-pages`} {...registerNavigation(index, href)}>{label}</li>
+            settingPages.map(({ label, value }, index) => (
+              <li key={`item-nav-${index}-menu-pages`} {...registerNavigation(index, value)}>
+                <Translate>{label}</Translate>
+              </li>
             ))
           }
+
         </ul>
       </div>
     </S.MenuVertical>

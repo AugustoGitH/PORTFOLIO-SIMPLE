@@ -13,6 +13,12 @@ export const experiences: Experience[] = [
     type: "company",
   },
   {
+    office: "Desenvolvedor Web Front-End",
+    company: "Elys",
+    date: "05/2024 - *",
+    type: "company",
+  },
+  {
     office: "Desenvolvedor Web Full-Stack",
     company: "DRT Sistemas",
     date: "08/2023 - 02/2024",

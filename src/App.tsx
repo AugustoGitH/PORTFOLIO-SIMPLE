@@ -1,30 +1,26 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import ButtonToTop from "./components/ButtonToTop"
-import Header from "./components/Header"
-import PageProvider from "./contexts/PageContext"
-import ToastProvider from "./contexts/ToastContext"
-import TranslateProvider from "./contexts/TranslateContext"
-import LadingPage from "./templates/LadingPage"
+
+
+import Portfolio from "./templates/Portfolio"
+import CurrentPageProvider from "./contexts/CurrentPageContext"
+import Bio from "./templates/Bio"
+import bio from "./settings/bio"
+
 
 function App() {
 
   return (
-    <TranslateProvider>
-      <ToastProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={
-              <PageProvider>
-                <Header />
-                <LadingPage />
-                <ButtonToTop />
-              </PageProvider>
-            } />
-          </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/portfolio" element={
+          <CurrentPageProvider>
+            <Portfolio />
+          </CurrentPageProvider>
+        } />
+        <Route path="/" element={<Bio profile={bio} />} />
+      </Routes>
 
-        </BrowserRouter>
-      </ToastProvider>
-    </TranslateProvider>
+    </BrowserRouter>
   )
 }
 

@@ -6,7 +6,7 @@ interface SocialLink {
   title: string,
   icon: ReactNode
 }
-export const socialLinks: Record<string, SocialLink> = {
+export const socialLinks: Record<"linkedin" | "whatsapp" | "github", SocialLink> = {
   linkedin: {
     href: "https://www.linkedin.com/in/augusto-westphal/",
     title: "Linkedin",

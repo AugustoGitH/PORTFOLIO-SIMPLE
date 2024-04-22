@@ -42,7 +42,6 @@ export default function ToastProvider({ children }: ToastProviderProps) {
         show={toast.show}
         text={toast.text ?? ""}
         status={toast.status ?? undefined}
-        onClose={() => setToast(prev => ({ ...prev, show: false }))}
       />
     </ToastContext.Provider>
   )
