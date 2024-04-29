@@ -10,7 +10,7 @@ export interface ProfileBio {
   title: string;
   subTitle: string;
   description: string;
-  links: LinkBio[];
+  links: Array<[string, LinkBio[]]>;
   profile: {
     alt: string;
     src: string;

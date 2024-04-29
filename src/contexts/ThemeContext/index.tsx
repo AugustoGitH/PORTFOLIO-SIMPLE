@@ -59,7 +59,6 @@ const ThemeProvider = ({ children }: IThemeProvider) => {
 
       } else {
         setThemeLightMode()
-        console.log()
       }
 
     }

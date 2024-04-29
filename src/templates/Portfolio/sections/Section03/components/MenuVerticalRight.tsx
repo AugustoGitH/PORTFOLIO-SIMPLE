@@ -29,9 +29,8 @@ export default function MenuVerticalRight({ pageCurrentContentRef, current }: Me
   useEffect(() => {
     const elementsId = pageCurrentContentRef?.current?.querySelectorAll("[id]")
     if (elementsId) {
-      setSectionsInPage(Object.fromEntries(Array.from(elementsId).map((el) => [el.id, false])))
+      setSectionsInPage(Object.fromEntries(Array.from(elementsId).map((el, index) => [el.id, index === 1])))
     }
-
 
     const handleScroll = () => {
       const sections = pageCurrentContentRef.current?.querySelectorAll("[id]");
@@ -41,6 +40,7 @@ export default function MenuVerticalRight({ pageCurrentContentRef, current }: Me
 
         sections.forEach(section => {
           const rect = section.getBoundingClientRect();
+
           const isSectionVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
 
           if (isSectionVisible) {
@@ -48,7 +48,6 @@ export default function MenuVerticalRight({ pageCurrentContentRef, current }: Me
           }
         });
         if (visibleSection) {
-
           setSectionsInPage(prev => ({
             ...Object.fromEntries(Object.entries(prev).map(([id]) => [id, false])),
             [visibleSection as string]: true

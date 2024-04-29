@@ -86,8 +86,8 @@ export const colorsModeLight: Record<
   },
   info: {
     background: {
-      main: "#5a62f5",
-      light: "#676ffc",
+      main: "#999ff7",
+      light: "#AEB2EC",
     },
     color: {
       main: "#5a62f5",

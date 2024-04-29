@@ -19,10 +19,10 @@ export default function useDownloadFile() {
         a.click();
         setIsLoading(false);
         setIsDownload(true);
-        activeToast("success", <><Icon icon="line-md:download-loop" />Download do currículo concluído!</>);
+        activeToast("success", <><Icon icon="foundation:check" />Download do currículo concluído!</>);
         setTimeout(() => {
           setIsDownload(false);
-        }, 8000);
+        }, 5000);
       }, 1000);
 
       cb ? cb() : undefined;

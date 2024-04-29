@@ -6,19 +6,40 @@ export const Bio = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem;
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: .5rem;
-        }
+  padding: .5rem .5rem 5rem .5rem;
+
   .content{
     width: 800px;
-    .btn-container-share{
+    .menu-options{
+      position: sticky;
+      z-index: 10;
+      top: .5rem;
       width: 100%;
-      padding: 1rem 0;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(5px);
+      border-radius: 1rem;
+      height: calc(50px + 2rem);
+      gap: 1rem;
       @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: .5rem 0;
+         padding: .5rem;
+         height: calc(50px + 1rem);
+      }
+        .right-side{
+          display: flex;
+          align-items: center;
+          gap: 1rem;
         }
-      button{
+        img.profile{
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          animation: ${scaleUpPresence} .2s;
+        }
+      button.btn-open-share-options{
         width: 40px;
         height: 40px;
         background-color: ${({ theme }) => theme.colors.primary.background.light};
@@ -55,6 +76,7 @@ export const Bio = styled.div`
         bottom: -85px;
         left: 50%;
         transform: translateX(-50%);
+        background-color: ${({ theme }) => theme.colors.info.background.main};
         border: 9px solid ${({ theme }) => theme.colors.primary.background.main};
         @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
           width: 140px;
@@ -68,7 +90,7 @@ export const Bio = styled.div`
         object-fit: cover;
         border-radius: 1rem;
         background-color: ${({ theme }) => theme.colors.primary.background.light};
-        
+        background-color: ${({ theme }) => theme.colors.primary.background.light};
       }
     }
     .body{
@@ -89,14 +111,33 @@ export const Bio = styled.div`
         line-height:${({ theme }) => theme.font.size.paragraphs.xsm[1]};
         color: ${({ theme }) => theme.colors.light.color.light}; 
       }
-      ul.links{
+      .section-links{
+        width: 100%;
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-
+        gap: 2rem;
+        .section-link{
+          width: 100%;
+          span.title-section{
+          text-transform: uppercase;
+          display: block;
+          font-weight: bold;
+          font-size:${({ theme }) => theme.font.size.paragraphs.sm[0]};
+        line-height:${({ theme }) => theme.font.size.paragraphs.sm[1]};
+        }
+        ul.links{
+          width: 100%;
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+        }
       }
+    
     }
   }
 

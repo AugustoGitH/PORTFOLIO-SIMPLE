@@ -5,6 +5,9 @@ import { experiences } from "@/settings/experiences"
 import { ToastContext } from "@/contexts/ToastContext"
 import Translate from "@/components/Translate"
 
+import calculateExperiencesToView from "./utils/calculateExperiencesToView"
+import Experience from "./components/Experience"
+
 
 const ButtonFavorite = () => {
   const [favorite, setFavorite] = useState(false)
@@ -32,18 +35,9 @@ const ButtonFavorite = () => {
   )
 }
 
-const numm = (number: number) => {
-  while (number % 3 !== 0) {
-    number += 1
-  }
-
-  return number
-}
 
 
 export default function Section02() {
-
-  const experiencesCompany = (new Array(numm(experiences.filter(ex => ex.type === "company").length))).fill(undefined).map((_, index) => experiences.filter(ex => ex.type === "company")[index] || null)
 
   return (
     <S.Section02>
@@ -58,16 +52,12 @@ export default function Section02() {
           </div>
           <div className="grid">
             {
-              experiencesCompany.map((exp, index) => exp ? (
-                <div key={`exp-${exp.type}-${index}`} className="experience">
-                  <span className="sup"><Translate>{exp.office}</Translate></span>
-                  <h1><Translate>{exp.company}</Translate></h1>
-                  <span className="sub">{exp.date}</span>
-                </div>
-              ) : <div className="experience empty" key={`exp-empty-${index}`}>
-
-                <Icon className="icon" icon="solar:box-bold" />
-              </div>)
+              calculateExperiencesToView(experiences, "company").map((experience, index) => (
+                <Experience
+                  key={experience ? experience.id : `empty-experience-${index}`}
+                  experience={experience}
+                />
+              ))
             }
           </div>
           <div className="rectangle">
@@ -75,12 +65,11 @@ export default function Section02() {
           </div>
           <div className="grid last">
             {
-              experiences.filter(exp => exp.type === "freelancer").map((exp, index) => (
-                <div key={`exp-${exp.type}-${index}`} className="experience">
-                  <span className="sup"><Translate>{exp.office}</Translate></span>
-                  <h1><Translate>{exp.company}</Translate></h1>
-                  <span className="sub">{exp.date}</span>
-                </div>
+              calculateExperiencesToView(experiences, "freelancer").map((experience, index) => (
+                <Experience
+                  key={experience ? experience.id : `empty-experience-${index}`}
+                  experience={experience}
+                />
               ))
             }
           </div>

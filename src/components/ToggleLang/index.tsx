@@ -1,5 +1,5 @@
 import { ComponentProps, useContext, useState } from "react"
-import * as S from "../styles"
+import * as S from "./styles"
 import { Icon } from "@iconify/react"
 import { TranslateContext } from "@/contexts/TranslateContext"
 import { Lang } from "@/settings/translate/types"
@@ -42,7 +42,7 @@ export default function ToggleLang({ mobile = false }: ToggleLangProps) {
         onMouseEnter={() => setShowMenu(true)}
         onMouseLeave={() => setShowMenu(false)}
       >
-        <button className="btn-toggle-lang">
+        <button className="btn-toggle-lang" title="Botão para trocar linguagem">
 
           <Icon className="icon-lang" icon="mdi:language" />
           {mobile && <span>{labelLangs[lang]}</span>}

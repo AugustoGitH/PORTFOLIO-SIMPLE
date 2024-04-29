@@ -1,12 +1,13 @@
 import { socialLinks } from "@/settings/socialLinks"
 import * as S from "../styles"
-import ToggleLang from "./ToggleLang"
-import ToggleTheme from "./ToggleTheme"
+
 import { useContext, useEffect } from "react"
 import { CurrentPageContext } from "@/contexts/CurrentPageContext"
 import scrollToElementById from "@/helpers/scrollToElementById"
 import { settingPages } from "@/settings/pages"
 import Translate from "@/components/Translate"
+import ToggleLang from "@/components/ToggleLang"
+import ToggleTheme from "@/components/ToggleTheme"
 
 interface MenuVerticalProps {
   show: boolean,

@@ -15,6 +15,9 @@ export const ShareCardLinks = styled.div`
   justify-content: center;
 
   padding: 2rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: .5rem;
+  }
   .card{
     background-color: ${({ theme }) => theme.colors.primary.background.light};
     width: 500px;
@@ -25,11 +28,18 @@ export const ShareCardLinks = styled.div`
     flex-direction: column;
     align-items: center;
     animation: ${scaleUpPresence} .2s;
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 2.5rem .5rem;
+  }
     .btn-close-card{
       position: absolute;
       top: 2rem;
       right: 2rem;
       font-size: 1rem;
+      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        top: 1rem;
+        right: 1rem;
+  }
     }
     span.title{
       display: block;
@@ -41,6 +51,9 @@ export const ShareCardLinks = styled.div`
     .list-share-link{
       margin-top: 3rem;
       width: 100%;
+      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        margin-top: 1rem;
+  }
       li{
         width: 100%;
        a{

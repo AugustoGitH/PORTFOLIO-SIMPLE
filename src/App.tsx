@@ -7,17 +7,21 @@ import Bio from "./templates/Bio"
 import bio from "./settings/bio"
 
 
+
+
+
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Bio profile={bio} />} />
         <Route path="/portfolio" element={
           <CurrentPageProvider>
             <Portfolio />
           </CurrentPageProvider>
         } />
-        <Route path="/" element={<Bio profile={bio} />} />
+
       </Routes>
 
     </BrowserRouter>

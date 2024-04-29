@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import * as S from "../styles"
+import * as S from "./styles"
 import { Icon } from "@iconify/react"
 import { ThemeContext } from "@/contexts/ThemeContext"
 

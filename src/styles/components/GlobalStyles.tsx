@@ -8,6 +8,9 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   button, a{
     all: unset;
     box-sizing: border-box;

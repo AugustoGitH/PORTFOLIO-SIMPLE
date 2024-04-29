@@ -14,7 +14,6 @@ interface TranslateProps {
 }
 const Translate = ({ children }: TranslateProps): JSX.Element => {
   const { lang } = useContext(TranslateContext)
-
   const wordTranslated = translateWords({
     keys: translateConfig.keys,
     words: typeof children === "string" ? children : renderToString(children as JSX.Element),

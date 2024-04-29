@@ -42,7 +42,7 @@ const ShareCardLinks = ({ title, onClose = () => { }, open, link }: ShareCardLin
     <S.ShareCardLinks>
       <div className="card" ref={cardRef}>
         <span className="title">{title}</span>
-        <button className="btn-close-card" onClick={onClose}>
+        <button className="btn-close-card" onClick={onClose} title="botão para ver opções de compartilhamento">
           <Icon className="icon-arrow" icon="ep:close-bold" />
         </button>
         <ul className="list-share-link">

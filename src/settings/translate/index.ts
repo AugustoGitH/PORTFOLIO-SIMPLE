@@ -84,6 +84,26 @@ const keys: TranslateKeys = [
     es: "Mis Proyectos 🪩",
   },
   {
+    ptbr: "Desenvolvedor Web Full-Stack 🚀",
+    en: "Full-Stack Web Developer 🚀",
+    es: "Desarrollador Web Full-Stack 🚀",
+  },
+  {
+    ptbr: "Estudante de Engenharia de Software, em início de carreira com aproximadamente 2 anos de experiência e buscando se desenvolver na área.\nAcredito que a tecnologia é uma ferramenta poderosa para mudar o mundo e estou sempre em busca de novos desafios e oportunidades para contribuir para essa causa.",
+    en: "Software Engineering student, early in my career with approximately 2 years of experience and seeking to develop myself in the field.\nI believe that technology is a powerful tool to change the world and I'm always seeking new challenges and opportunities to contribute to this cause.",
+    es: "Estudiante de Ingeniería de Software, al inicio de mi carrera con aproximadamente 2 años de experiencia y buscando desarrollarme en el área.\nCreo que la tecnología es una herramienta poderosa para cambiar el mundo y siempre estoy en busca de nuevos desafíos y oportunidades para contribuir con esta causa.",
+  },
+  {
+    ptbr: "Veja o meu",
+    en: "See mine",
+    es: "Mira el mío",
+  },
+  {
+    ptbr: "Me siga no",
+    en: "Follow me on",
+    es: "Sígueme en",
+  },
+  {
     ptbr: "Ferramentas Adicionais",
     en: "Additional Tools",
     es: "Herramientas Adicionales",

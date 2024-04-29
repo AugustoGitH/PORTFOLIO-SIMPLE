@@ -2,14 +2,14 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 import * as S from "./styles"
 import { Fragment, useState } from "react"
 import normalizeString from "@/helpers/normalizeString"
+import { TypeMediaProject } from "@/settings/projects/types"
 
 interface ImageCarouselProps {
-  images: Array<{ id: string, src: string, alt: string, type: "image" | "video" }>
+  images: Array<{ id: string, src: string, alt: string, type: TypeMediaProject }>
 }
 export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [imageIndex, setImageIndex] = useState(0)
   // const { registerVideo } = useContext(ImageCarouselContext)
-
   const translate = (direction: "left" | "right") => {
     if (direction === "left") {
       setImageIndex(prev => prev - 1)

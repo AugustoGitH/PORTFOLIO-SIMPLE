@@ -52,7 +52,7 @@ export const ImageCarousel = styled.div`
       transition: .2s;
     }
     img{
-    
+      
       object-fit: contain;
       width: 100%;
       height: 100%;

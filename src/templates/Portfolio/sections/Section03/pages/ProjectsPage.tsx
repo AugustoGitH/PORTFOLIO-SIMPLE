@@ -14,11 +14,10 @@ const ProjectsPage = ({ name }: ProjectsPageProps) => (
       projects.map(project => (
         <div key={project.id}>
           <hr />
-          <h3
-            id={`${normalizeString(project.title, {
-              replaceSpaces: true,
-              toLowerCase: true
-            })}`}><code><Translate>{project.title}</Translate></code></h3>
+          <h3 id={`${normalizeString(project.title, {
+            replaceSpaces: true,
+            toLowerCase: true
+          })}`}><code><Translate>{project.title}</Translate></code></h3>
           <p><Translate>{project.description}</Translate></p>
           <ImageCarousel
             images={project.images.map((img, index) => ({

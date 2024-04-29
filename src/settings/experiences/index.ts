@@ -1,11 +1,17 @@
-interface Experience {
-  office: string;
-  company: string;
-  date: string;
-  type: "freelancer" | "company";
-}
+import { Experience } from "./types";
+import { v4 as uuid } from "uuid";
+type SimpleExperience = Omit<Experience, "id">;
 
-export const experiences: Experience[] = [
+const treatExperiencesVisualization = (
+  experiences: SimpleExperience[]
+): Experience[] => {
+  return experiences.map((experience) => ({
+    ...experience,
+    id: uuid(),
+  }));
+};
+
+const simpleExperiences: SimpleExperience[] = [
   {
     office: "Desenvolvedor Web Full-Stack",
     company: "Digital Mind",
@@ -49,3 +55,5 @@ export const experiences: Experience[] = [
     type: "freelancer",
   },
 ];
+
+export const experiences = treatExperiencesVisualization(simpleExperiences);

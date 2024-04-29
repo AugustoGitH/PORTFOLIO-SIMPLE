@@ -8,9 +8,10 @@ import MenuVerticalLeft from "./components/MenuVerticalLeft"
 import MenuVerticalRight from "./components/MenuVerticalRight"
 import PageCurrentContent from "./components/PageCurrentContent"
 
-import scrollToElementById from "@/helpers/scrollToElementById"
+
 import { settingPages } from "@/settings/pages"
 import { CurrentPageContext } from "@/contexts/CurrentPageContext"
+import scrollToElementById from "@/helpers/scrollToElementById"
 
 
 
@@ -23,8 +24,10 @@ export default function Section03() {
     const pageIndex = typeof prevPage === "function" ? prevPage(currentPage) : prevPage
     setCurrentPage(pageIndex)
 
+
+
     setTimeout(() => {
-      scrollToElementById(id, 100)
+      scrollToElementById(id, 500)
     }, 200)
   }
 
