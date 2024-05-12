@@ -69,8 +69,7 @@ const simpleProjects: SimpleProject[] = [
         <br />
         🔧 <strong>Tecnologias Utilizadas:</strong>
         <br />
-        <br />
-        <br />
+
         <strong>Frontend:</strong> <br />
         <code>Next.js</code> e <code>TypeScript</code> para agilidade e
         eficiência Cacheamento para melhorar a experiência do usuário
@@ -201,9 +200,35 @@ const simpleProjects: SimpleProject[] = [
   },
   {
     title: "Codequiz",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    description: <>
+
+      🚀 <strong>CodeQuiz: Desafie-se e Aprenda Programação</strong>
+      <br />
+      <br />
+      Leve sua jornada de aprendizado para o próximo nível com o CodeQuiz! Uma plataforma interativa para jogar e criar quizzes relacionados à programação, tudo em um só lugar.
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong> <br />
+      <code>React.js</code> e <code>TypeScript</code> para uma experiência de usuário dinâmica e segura.
+      <br />
+      <strong>Backend:</strong> <br />
+      <code>Express.js</code> e <code>TypeScript</code> para um servidor robusto e escalável, com armazenamento de dados no <code>MongoDB</code>.
+      <br />
+      <br />
+      ✨ <strong>Recursos Especiais:</strong>
+      <br />
+      <br />
+      Desafie-se com quizzes cronometrados e ganhe conquistas ao completar desafios.
+      Aproveite o sistema de autenticação para manter suas informações seguras e a revisão de quizzes para aprimorar seu conhecimento.
+      <br />
+      <br />
+      Descubra uma nova maneira de aprender e se divertir com o CodeQuiz!
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/AugustoGitH/CODEQUIZ--DEV",
     },
     media: {
       images: codeQuizImgs,
@@ -212,9 +237,27 @@ const simpleProjects: SimpleProject[] = [
   },
   {
     title: "Trading Quantitativo - LP",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    description: <>
+      📈 Lading Page - Trading Quantitativo
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong>
+      <br />
+      <code>React.js</code> e <code>TypeScript</code> para uma experiência de
+      usuário dinâmica e responsiva.
+      <br />
+      <br />
+      💡 <strong>Destaque:</strong>
+      <br />
+      <br />
+      Troca de tema da página de claro para escuro.
+      <br />
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/techlegionbr/trading-lucrativo-frontend",
     },
     media: {
       images: lpTradingImgs,
@@ -222,9 +265,21 @@ const simpleProjects: SimpleProject[] = [
   },
   {
     title: "Desenv. de E-commerce - LP",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    description: <>
+      Lading Page - Desenvolvimento de E-commerce
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong>
+      <br />
+      <code>React.js</code> e <code>TypeScript</code> para uma experiência de
+      usuário dinâmica e responsiva.
+      <br />
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/techlegionbr/lp-desenvolvimento-de-ecommerce",
     },
     media: {
       images: lpDevEcommerceImgs,
@@ -232,19 +287,43 @@ const simpleProjects: SimpleProject[] = [
   },
   {
     title: "Social Media - LP",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    description: <>
+      Lading Page - Social Media
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong>
+      <br />
+      <code>React.js</code> e <code>TypeScript</code> para uma experiência de
+      usuário dinâmica e responsiva.
+      <br />
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/techlegionbr/lp-social-media-v2",
     },
     media: {
       images: lpDevSocialMediaImgs,
     },
   },
   {
-    title: "Social Media - LP",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    title: "Kommo - LP",
+    description: <>
+      Lading Page - Kommo
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong>
+      <br />
+      <code>React.js</code> e <code>TypeScript</code> para uma experiência de
+      usuário dinâmica e responsiva.
+      <br />
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/techlegionbr/lp-kommo-crm",
     },
     media: {
       images: lpKommoImgs,
@@ -252,9 +331,34 @@ const simpleProjects: SimpleProject[] = [
   },
   {
     title: "Sportify - Ecommerce",
-    description: "fasdfasdfasd fasdfsdfasd fasdf asdf asdf \n\n\n\nfasfasdf",
+    description: <>
+      🛠️ Desenvolvimento do e-commerce Sportify
+      <br />
+      <br />
+      📝 <strong>Ecommerce exclusivo para artigos esportivos:</strong>
+      <br />
+      <br />
+      Criado com o intuito de desenvolver funcionalidades presentes em sistemas de e-commerce, como controle
+      de estoque, criação de produtos, etc...
+      <br />
+      <br />
+      🔧 <strong>Tecnologias Utilizadas:</strong>
+      <br />
+      <br />
+      <strong>Frontend:</strong>
+      <br />
+      <code>React.js</code> para uma experiência de
+      usuário dinâmica e responsiva.
+      <br />
+      <strong>Backend:</strong>
+      <br />
+      <code>Express.js</code> e <code>MongoDB</code>{" "}
+      para garantir a robustez e escalabilidade do sistema.
+      <br />
+
+    </>,
     links: {
-      github: "fasdfsdf",
+      github: "https://github.com/AugustoGitH/SPORTFY-1.0--DEV",
     },
     media: {
       images: ecommerceSportifyImgs,

@@ -39,9 +39,9 @@ const keys: TranslateKeys = [
   },
 
   {
-    ptbr: "Sistemas de armazenamento e gerenciamento de dados, como <strong>MongoDB</strong>, <strong>Postgres</strong> e <strong>MySQL</strong>.",
-    en: "Data storage and management systems, such as <strong>MongoDB</strong>, <strong>Postgres</strong>, and <strong>MySQL</strong>.",
-    es: "Sistemas de almacenamiento y gestión de datos, como <strong>MongoDB</strong>, <strong>Postgres</strong> y <strong>MySQL</strong>.",
+    ptbr: "Sistemas de armazenamento e gerenciamento de dados, como <strong>MongoDB</strong>, <strong>PostgreSQL</strong> e <strong>MySQL</strong>.",
+    en: "Data storage and management systems, such as <strong>MongoDB</strong>, <strong>PostgreSQL</strong>, and <strong>MySQL</strong>.",
+    es: "Sistemas de almacenamiento y gestión de datos, como <strong>MongoDB</strong>, <strong>PostgreSQL</strong> y <strong>MySQL</strong>.",
   },
   {
     ptbr: "Banco de Dados",
@@ -49,9 +49,14 @@ const keys: TranslateKeys = [
     es: "Base de Datos",
   },
   {
-    ptbr: "Tecnologias para criar a lógica e funcionalidades do aplicativo, como <strong>Node.js</strong>, <strong>Firebase</strong> e <strong>Nest.js</strong>.",
-    en: "Technologies to create the logic and functionalities of the application, such as <strong>Node.js</strong>, <strong>Firebase</strong>, and <strong>Nest.js</strong>.",
-    es: "Tecnologías para crear la lógica y funcionalidades de la aplicación, como <strong>Node.js</strong>, <strong>Firebase</strong> y <strong>Nest.js</strong>.",
+    ptbr: "Testes Automatizados",
+    en: "Automated Testing",
+    es: "Pruebas automatizadas",
+  },
+  {
+    ptbr: "Tecnologias para criar a lógica e funcionalidades do aplicativo, como <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>Express.js</strong> e <strong>Nest.js</strong>.",
+    en: "Technologies to create the logic and functionalities of the application, such as <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, and <strong>Nest.js</strong>.",
+    es: "Tecnologías para crear la lógica y funcionalidades de la aplicación, como <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong> y <strong>Nest.js</strong>.",
   },
   {
     ptbr: "Tecnologias para desenvolver a interface do usuário, incluindo <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>JQuery</strong>, <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>, <strong>React.js</strong> e <strong>Next.js</strong>.",
@@ -89,9 +94,9 @@ const keys: TranslateKeys = [
     es: "Desarrollador Web Full-Stack 🚀",
   },
   {
-    ptbr: "Estudante de Engenharia de Software, em início de carreira com aproximadamente 2 anos de experiência e buscando se desenvolver na área.\nAcredito que a tecnologia é uma ferramenta poderosa para mudar o mundo e estou sempre em busca de novos desafios e oportunidades para contribuir para essa causa.",
-    en: "Software Engineering student, early in my career with approximately 2 years of experience and seeking to develop myself in the field.\nI believe that technology is a powerful tool to change the world and I'm always seeking new challenges and opportunities to contribute to this cause.",
-    es: "Estudiante de Ingeniería de Software, al inicio de mi carrera con aproximadamente 2 años de experiencia y buscando desarrollarme en el área.\nCreo que la tecnología es una herramienta poderosa para cambiar el mundo y siempre estoy en busca de nuevos desafíos y oportunidades para contribuir con esta causa.",
+    ptbr: "Desenvolvedor Web Full-Stack, com aproximadamente 4 anos de experiência, comprometido em utilizar a tecnologia como uma ferramenta catalisadora para impactar positivamente a sociedade. Busco incessantemente novos desafios e oportunidades para aprimorar minhas habilidades e contribuir de forma significativa para projetos inovadores e inspiradores.",
+    en: "Full-Stack Web Developer, with approximately 4 years of experience, committed to using technology as a catalyst to positively impact society. I constantly seek new challenges and opportunities to enhance my skills and contribute significantly to innovative and inspiring projects.",
+    es: "Desarrollador Web Full-Stack, con aproximadamente 4 años de experiencia, comprometido en utilizar la tecnología como una herramienta catalizadora para impactar positivamente a la sociedad. Busco constantemente nuevos desafíos y oportunidades para mejorar mis habilidades y contribuir de manera significativa a proyectos innovadores e inspiradores.",
   },
   {
     ptbr: "Veja o meu",
@@ -109,9 +114,14 @@ const keys: TranslateKeys = [
     es: "Herramientas Adicionales",
   },
   {
-    ptbr: "Ferramentas para melhorar o processo de desenvolvimento e garantir a qualidade, como testes automatizados e gerenciamento de servidores.",
-    en: "Tools to enhance the development process and ensure quality, such as automated testing and server management.",
-    es: "Herramientas para mejorar el proceso de desarrollo y garantizar la calidad, como pruebas automatizadas y gestión de servidores.",
+    ptbr: "Tecnologias para implementar testes unitários e automatizados em um software, como <strong>Mocha</strong>, <strong>Chai</strong>, <strong>Stubs</strong>, <strong>Spies</strong> e <strong>Jest</strong>.",
+    en: "Technologies to implement unit and automated tests in a software, such as <strong>Mocha</strong>, <strong>Chai</strong>, <strong>Stubs</strong>, <strong>Spies</strong>, and <strong>Jest</strong>.",
+    es: "Tecnologías para implementar pruebas unitarias y automatizadas en un software, como <strong>Mocha</strong>, <strong>Chai</strong>, <strong>Stubs</strong>, <strong>Spies</strong> y <strong>Jest</strong>.",
+  },
+  {
+    ptbr: "Desenvolvedor Web Front-End",
+    en: "Front-End Web Developer",
+    es: "Desarrollador Web Front-End",
   },
   {
     ptbr: "Habilidades Extras",

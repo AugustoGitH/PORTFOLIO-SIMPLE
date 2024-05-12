@@ -29,7 +29,7 @@ export default function MenuVertical({ show, onClose = () => { } }: MenuVertical
       onClose()
       setCurrentPage(index)
       setTimeout(() => {
-        scrollToElementById(id, 100)
+        scrollToElementById(id, window.innerWidth > 700 ? 500 : 100)
       }, 200)
     }
   })

@@ -19,7 +19,9 @@ export const Bio = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      backdrop-filter: blur(5px);
+       backdrop-filter: blur(5px);
+       
+  -webkit-backdrop-filter: blur(5px);
       border-radius: 1rem;
       height: calc(50px + 2rem);
       gap: 1rem;
@@ -32,13 +34,7 @@ export const Bio = styled.div`
           align-items: center;
           gap: 1rem;
         }
-        img.profile{
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          object-fit: cover;
-          animation: ${scaleUpPresence} .2s;
-        }
+
       button.btn-open-share-options{
         width: 40px;
         height: 40px;

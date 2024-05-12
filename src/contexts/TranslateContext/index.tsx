@@ -16,13 +16,20 @@ interface ITranslateProvider {
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export const TranslateContext = createContext({} as ITranslateContext)
 
+const modelNavigatorLangs: Record<string, Lang> = {
+  "pt-BR": "ptbr",
+  "en-US": "en",
+  "es-ES": "es"
+}
+
 export default function TranslateProvider({ children, langDefault = "ptbr" }: ITranslateProvider): JSX.Element {
   const [langSelect, setLangSelect] = useState(langDefault)
 
 
   useEffect(() => {
-    setLangSelect(typeof window !== 'undefined' ? localStorage.getItem('lang') as Lang : langDefault)
+    setLangSelect(localStorage.getItem('lang') as Lang || modelNavigatorLangs[navigator.language] || langDefault)
   }, [langDefault])
+
   const handleSelectLang = (lang: Lang): void => {
     localStorage.setItem('lang', lang)
     setLangSelect(lang);

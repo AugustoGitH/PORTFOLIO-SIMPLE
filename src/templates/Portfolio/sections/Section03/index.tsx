@@ -27,7 +27,7 @@ export default function Section03() {
 
 
     setTimeout(() => {
-      scrollToElementById(id, 500)
+      scrollToElementById(id, window.innerWidth > 700 ? 500 : 100)
     }, 200)
   }
 

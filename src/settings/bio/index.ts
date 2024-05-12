@@ -14,7 +14,7 @@ const bio: ProfileBio = {
     src: profile,
   },
   description:
-    "Estudante de Engenharia de Software, em início de carreira com aproximadamente 2 anos de experiência e buscando se desenvolver na área.\nAcredito que a tecnologia é uma ferramenta poderosa para mudar o mundo e estou sempre em busca de novos desafios e oportunidades para contribuir para essa causa.",
+    "Desenvolvedor Web Full-Stack, com aproximadamente 4 anos de experiência, comprometido em utilizar a tecnologia como uma ferramenta catalisadora para impactar positivamente a sociedade. Busco incessantemente novos desafios e oportunidades para aprimorar minhas habilidades e contribuir de forma significativa para projetos inovadores e inspiradores.",
   title: "Augusto Caetano Westphal",
   subTitle: "Desenvolvedor Web Full-Stack 🚀",
   links: [
@@ -44,7 +44,7 @@ const bio: ProfileBio = {
       "Me siga no",
       [
         {
-          href: "https://github.com/AugustoGitH",
+          href: "https://www.instagram.com/louco_da_syntax/",
           icon: {
             isImg: true,
             src: imgLoucoDaSyntax,

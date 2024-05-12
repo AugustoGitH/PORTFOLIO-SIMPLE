@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 import * as S from "./styles"
 
 import ShareCardLinks from "@/components/ShareCardLinks"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import { ProfileBio } from "@/settings/bio/types"
 
@@ -19,16 +19,6 @@ interface BioProps {
 
 export default function Bio({ profile }: BioProps) {
   const [showShareCard, setShowShareCard] = useState(false)
-  const [isHeaderDown, setIsHeaderDown] = useState(false)
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsHeaderDown(window.scrollY > 200)
-    }
-
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.addEventListener("scroll", handleScroll)
-  }, [])
 
   return (
     <>
@@ -39,11 +29,7 @@ export default function Bio({ profile }: BioProps) {
             <button className="btn-open-share-options" onClick={() => setShowShareCard(true)}>
               <Icon className="icon" icon="tabler:dots" />
             </button>
-            {
-              isHeaderDown && (
-                <img className="profile" height={50} width={50} src={profile.profile.src} alt={profile.profile.alt} />
-              )
-            }
+
             <div className="right-side">
               <ToggleLang />
               <ToggleTheme />

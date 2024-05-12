@@ -8,7 +8,7 @@ export default function useDownloadFile() {
   const [error, setError] = useState<string | null>(null);
   const { activeToast } = useContext(ToastContext);
 
-  const downloadFile = (src: string, cb?: () => void) => {
+  const downloadFile = (src: string, onDownlaod?: () => void) => {
     setIsLoading(true);
     try {
       const a = document.createElement("a");
@@ -25,7 +25,7 @@ export default function useDownloadFile() {
         }, 5000);
       }, 1000);
 
-      cb ? cb() : undefined;
+      onDownlaod ? onDownlaod() : undefined;
     } catch (error) {
       setError("Erro ao baixar o arquivo.");
       setIsLoading(false);

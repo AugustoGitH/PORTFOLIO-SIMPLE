@@ -14,12 +14,12 @@ export const stacks: Stack[] = [
   {
     emoji: "🛠️",
     title: "Backend",
-    description: <>Tecnologias para criar a lógica e funcionalidades do aplicativo, como <strong>Node.js</strong>, <strong>Firebase</strong> e <strong>Nest.js</strong>.</>
+    description: <>Tecnologias para criar a lógica e funcionalidades do aplicativo, como <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>Express.js</strong> e <strong>Nest.js</strong>.</>
   },
   {
     emoji: "📊",
     title: "Banco de Dados",
-    description: <>Sistemas de armazenamento e gerenciamento de dados, como <strong>MongoDB</strong>, <strong>Postgres</strong> e <strong>MySQL</strong>.</>
+    description: <>Sistemas de armazenamento e gerenciamento de dados, como <strong>MongoDB</strong>, <strong>PostgreSQL</strong> e <strong>MySQL</strong>.</>
   },
   {
     emoji: "⏱️",
@@ -28,8 +28,8 @@ export const stacks: Stack[] = [
   },
   {
     emoji: "🔧",
-    title: "Ferramentas Adicionais",
-    description: <>Ferramentas para melhorar o processo de desenvolvimento e garantir a qualidade, como testes automatizados e gerenciamento de servidores.</>
+    title: "Testes Automatizados",
+    description: <>Tecnologias para implementar testes unitários e automatizados em um software, como <strong>Mocha</strong>, <strong>Chai</strong>, <strong>Stubs</strong>, <strong>Spies</strong> e <strong>Jest</strong>.</>
   },
   {
     emoji: "🎨",
